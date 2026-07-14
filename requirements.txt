@@ -1,0 +1,11 @@
+# Core inference / serving
+# (SWE-agent itself is installed via `pip install -e external/SWE-agent`)
+
+# Local model serving (optional, if serving Qwen2.5-Coder-7B yourself)
+vllm
+
+# Config parsing / utilities
+pyyaml
+
+# Note: pin exact versions once the environment is verified,
+# e.g. `pip freeze > requirements.lock.txt`.

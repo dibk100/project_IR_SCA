@@ -1,0 +1,18 @@
+# Baseline experiment configuration for Qwen2.5-Coder-7B-Instruct + SWE-agent.
+#
+# NOTE: The exact key names/structure below must be reconciled with the
+# installed SWE-agent version's official config schema. This file records the
+# INTENT of the experiment; adjust field names when wiring to the real CLI.
+
+model:
+  name: Qwen/Qwen2.5-Coder-7B-Instruct
+  api_base: http://localhost:8000/v1   # local vLLM OpenAI-compatible server
+  temperature: 0.0
+  max_tokens: 4096
+
+agent:
+  step_limit: 20
+
+experiment:
+  name: baseline_qwen25_7b
+  output_dir: outputs/baseline

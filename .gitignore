@@ -216,3 +216,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---------------------------------------------------------------------------
+# project_IR_SCA specific
+# ---------------------------------------------------------------------------
+
+# External code cloned directly (not via git submodule)
+external/SWE-agent/
+
+# Large experiment outputs — keep only small example results tracked manually
+outputs/**/stdout.log
+outputs/**/trajectory.json
+outputs/**/*.traj
+outputs/**/*.jsonl
+
+# HF / model caches
+.cache/huggingface/
